@@ -1,0 +1,6 @@
+[
+  {"_label": "P1 Pedido válido (precio manipulado a 1 sol)", "nombre": "María Quispe Rojas", "correo": "atco.jah+b2c1@gmail.com", "celular": "987 654 321", "items": [{"sku": "AZ-COC-001", "qty": 1, "price": 1}, {"sku": "AZ-TEX-003", "qty": 2}, {"sku": "AZ-FAKE-999", "qty": 5}], "website": ""},
+  {"_label": "P2 Celular inválido y carrito vacío", "nombre": "Pedro", "correo": "pedro@", "celular": "12345", "items": [], "website": ""},
+  {"_label": "P3 Bot (honeypot lleno)", "nombre": "Bot Spam", "correo": "bot@spam.com", "celular": "987654321", "items": [{"sku": "AZ-DEC-002", "qty": 1}], "website": "http://spam.example"},
+  {"_label": "P4 Inyección HTML en nombre", "nombre": "<script>alert(1)</script>", "correo": "atco.jah+b2c4@gmail.com", "celular": "987654321", "items": [{"sku": "AZ-DEC-002", "qty": 1}], "website": ""}
+]

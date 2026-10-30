@@ -1,0 +1,8 @@
+[
+  {"_label": "C1 Domingo 01/11 10:00 (debe rechazar)", "nombre": "Prueba Domingo", "correo": "atco.jah+cal1@gmail.com", "celular": "987000001", "empresa": "Test SAC", "cargo": "QA", "urgencia": "Lo más pronto posible", "cita": "2026-11-01T10:00:00-05:00", "website": ""},
+  {"_label": "C2 Sábado 07/11 13:00 (debe rechazar, cierra 13:00)", "nombre": "Prueba Sabado", "correo": "atco.jah+cal2@gmail.com", "celular": "987000002", "empresa": "Test SAC", "cargo": "QA", "urgencia": "Lo más pronto posible", "cita": "2026-11-07T13:00:00-05:00", "website": ""},
+  {"_label": "C3 Martes 03/11 17:00 (debe rechazar, cierra 17:00)", "nombre": "Prueba Tarde", "correo": "atco.jah+cal3@gmail.com", "celular": "987000003", "empresa": "Test SAC", "cargo": "QA", "urgencia": "Lo más pronto posible", "cita": "2026-11-03T17:00:00-05:00", "website": ""},
+  {"_label": "C4 Martes 03/11 08:00 (debe rechazar, abre 9:00)", "nombre": "Prueba Temprano", "correo": "atco.jah+cal4@gmail.com", "celular": "987000004", "empresa": "Test SAC", "cargo": "QA", "urgencia": "Lo más pronto posible", "cita": "2026-11-03T08:00:00-05:00", "website": ""},
+  {"_label": "C5 Sábado 07/11 12:00 (válido)", "nombre": "Sofía Gutiérrez", "correo": "atco.jah+cal5@gmail.com", "celular": "987000005", "empresa": "Sofi Deco", "cargo": "Gerente", "urgencia": "Lo más pronto posible", "cita": "2026-11-07T12:00:00-05:00", "website": ""},
+  {"_label": "C6 Lunes 02/11 10:00 otra vez (bloque ya ocupado)", "nombre": "Andrés Torres", "correo": "atco.jah+cal6@gmail.com", "celular": "987000006", "empresa": "Torres Hogar", "cargo": "Dueño", "urgencia": "Lo más pronto posible", "cita": "2026-11-02T10:00:00-05:00", "website": ""}
+]

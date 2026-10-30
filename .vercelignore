@@ -4,3 +4,4 @@ scripts/
 .claude/
 README.md
 package.json
+tests/

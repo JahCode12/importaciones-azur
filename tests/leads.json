@@ -1,0 +1,8 @@
+[
+  {"_label": "L2 ASAP + cita lun 02/11 10:00", "nombre": "Rosa Huamán Torres", "correo": "atco.jah+lead1@gmail.com", "celular": "987654321", "empresa": "Bazar Rosa SAC", "cargo": "Gerente General", "urgencia": "Lo más pronto posible", "cita": "2026-11-02T10:00:00-05:00", "website": ""},
+  {"_label": "L3 Después de tres meses", "nombre": "Jorge Mendoza", "correo": "atco.jah+lead2@gmail.com", "celular": "912345678", "empresa": "Hogar Norte EIRL", "cargo": "Comprador", "urgencia": "Después de tres meses", "website": ""},
+  {"_label": "L4 Solo consultando", "nombre": "Luis Ramírez", "correo": "atco.jah+lead4@gmail.com", "celular": "934567890", "empresa": "Casa Bonita", "cargo": "Propietario", "urgencia": "Solo estoy consultando información", "website": ""},
+  {"_label": "L5 Entre uno y tres meses", "nombre": "Carmen Vílchez", "correo": "atco.jah+lead5@gmail.com", "celular": "945678901", "empresa": "Tienda Carmen", "cargo": "Administradora", "urgencia": "Entre uno y tres meses", "website": ""},
+  {"_label": "L6 Después de tres meses", "nombre": "Óscar Paredes", "correo": "atco.jah+lead6@gmail.com", "celular": "956789012", "empresa": "Muebles Óscar", "cargo": "Gerente", "urgencia": "Después de tres meses", "website": ""},
+  {"_label": "L7 ASAP sin cita", "nombre": "Elena Chávez", "correo": "atco.jah+lead7@gmail.com", "celular": "967890123", "empresa": "Elena Home", "cargo": "Fundadora", "urgencia": "Lo más pronto posible", "website": ""}
+]
