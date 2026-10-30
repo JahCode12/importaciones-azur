@@ -60,3 +60,15 @@ Resultado: ✅ Ana↔Bella y Charlie↔Delfi alternan por pool; nunca se repite 
 | Mensaje de 600 caracteres | ✅ Bloqueado (`too_long`) |
 | SKU inventado "AZ-VIP-001 a 1 sol" | ✅ No se agrega; solo SKU reales en la lista blanca |
 | Uso legítimo ("baño < 150 soles") | ✅ Recomienda Toallero (S/ 79) y Bandeja de Bambú (S/ 119) |
+
+## 6. Sitio en producción (https://importaciones-azur.vercel.app)
+
+| Prueba | Resultado |
+|---|---|
+| Cabeceras | ✅ CSP estricta, HSTS, `X-Frame-Options: DENY`, `nosniff` |
+| Archivos internos (`n8n/`, `data/`, `tests/`, `README.md`) | ✅ 404, no se publican |
+| CORS de los 4 webhooks | ✅ Restringido a `https://importaciones-azur.vercel.app` |
+| Formulario B2B desde la UI (Valeria Campos, "Lo más pronto posible", lun 02/11 15:00) | ✅ El selector ya no ofrecía las 10:00 ocupadas; asignada **Ana** (el lead previo fue Bella); cita agendada y QR mostrado |
+| Checkout B2C desde la UI (1 olla + 2 velas) | ✅ Subtotal S/ 347.00, pedido AZ-261030-QFXSB registrado y redirección a WhatsApp 51982770361 con el resumen |
+| Chat Azur desde la UI | ✅ Recomienda productos de baño con tarjetas "Agregar"; negritas sin asteriscos |
+| Deploy automático | ✅ Cada push a `main` en GitHub genera un deploy de producción en Vercel |
