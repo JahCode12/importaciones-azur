@@ -377,7 +377,9 @@ function initAlly() {
 const chat = { history: [], busy: false, lastSent: 0, opened: false };
 
 function addMsg(text, who = 'bot', extra = '') {
-  const node = el('div', { class: `msg msg--${who} ${extra}`.trim(), text });
+  const node = el('div', { class: `msg msg--${who} ${extra}`.trim() });
+  // El modelo usa **negritas** de Markdown: se pintan como <strong> sin tocar innerHTML.
+  String(text).split('**').forEach((part, i) => node.append(i % 2 ? el('strong', { text: part }) : document.createTextNode(part)));
   $('#chatBody').append(node);
   $('#chatBody').scrollTop = $('#chatBody').scrollHeight;
   return node;
