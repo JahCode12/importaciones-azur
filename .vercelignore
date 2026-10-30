@@ -1,0 +1,6 @@
+n8n/
+data/
+scripts/
+.claude/
+README.md
+package.json
