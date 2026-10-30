@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="es-PE">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Importaciones Azur · Artículos para el hogar en Perú</title>
+  <meta name="description" content="Importaciones Azur: tienda 100% virtual de artículos para el hogar en Perú. Organización, cocina, dormitorio, baño, decoración y textil. Compra por WhatsApp y precios mayoristas desde 50 unidades.">
+  <meta name="theme-color" content="#0b7a55">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#catalogo">Saltar al catálogo</a>
+
+  <div class="topbar">
+    <p>🚚 Envíos a todo el Perú · Coordinamos pago y entrega por WhatsApp · <a href="#aliados">¿Tienes un negocio? Precios mayoristas desde 50 unidades</a></p>
+  </div>
+
+  <header class="header" id="inicio">
+    <div class="container header__row">
+      <a href="#inicio" class="brand" aria-label="Importaciones Azur, inicio">
+        <img src="assets/img/logo.svg" alt="Importaciones Azur" width="196" height="42">
+      </a>
+      <form class="search" role="search" id="searchForm">
+        <label for="searchInput" class="sr-only">Buscar productos</label>
+        <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M10.5 3a7.5 7.5 0 0 1 5.9 12.1l4.2 4.2-1.4 1.4-4.2-4.2A7.5 7.5 0 1 1 10.5 3Zm0 2a5.5 5.5 0 1 0 0 11 5.5 5.5 0 0 0 0-11Z"/></svg>
+        <input id="searchInput" type="search" placeholder="¿Qué buscas para tu hogar?" autocomplete="off" maxlength="60">
+      </form>
+      <nav class="header__actions" aria-label="Accesos rápidos">
+        <a href="#aliados" class="link-ally">Conviértete en aliado</a>
+        <button class="cart-btn" id="cartOpen" type="button" aria-label="Abrir carrito">
+          <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M7 4h-2l-1 2v2h2l3.6 7.6-1.4 2.4c-.6 1.1.2 2.4 1.4 2.4h10v-2h-10l1.1-2h7.4c.8 0 1.4-.4 1.8-1l3.1-6H8.2L7 4Zm3 16a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3Zm8 0a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3Z"/></svg>
+          <span class="cart-btn__label">Carrito</span>
+          <span class="cart-btn__count" id="cartCount">0</span>
+        </button>
+      </nav>
+    </div>
+    <nav class="catnav" aria-label="Categorías">
+      <div class="container catnav__row" id="catNav"></div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero__grid">
+        <div class="hero__copy">
+          <span class="eyebrow">Nueva colección · Hogar en verde</span>
+          <h1>Tu casa, más ordenada, cálida y <em>tuya</em>.</h1>
+          <p>30 artículos seleccionados para organización, cocina, dormitorio, baño, decoración y textil. Elige, arma tu carrito y coordina el pago y la entrega por WhatsApp.</p>
+          <div class="hero__cta">
+            <a href="#catalogo" class="btn btn--primary">Ver catálogo</a>
+            <button type="button" class="btn btn--ghost" data-open-chat>
+              <img src="assets/img/azur.svg" alt="" width="26" height="26"> Pregúntale a Azur
+            </button>
+          </div>
+          <ul class="hero__trust">
+            <li><strong>100%</strong> virtual</li>
+            <li><strong>0</strong> pagos en la web</li>
+            <li><strong>+50 u.</strong> precio aliado</li>
+          </ul>
+        </div>
+        <div class="hero__media">
+          <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=1100&q=75" alt="Sala con sofá verde esmeralda y luz natural" width="1100" height="760" fetchpriority="high">
+          <div class="hero__badge">
+            <img src="assets/img/azur.svg" alt="" width="44" height="44">
+            <div><strong>¡Hola, soy Azur!</strong><span>Te ayudo a elegir y armar tu carrito.</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="catsTitle">
+      <div class="container">
+        <div class="section__head">
+          <h2 id="catsTitle">Compra por categoría</h2>
+          <p>Encuentra rápido lo que tu espacio necesita.</p>
+        </div>
+        <div class="cat-tiles" id="catTiles"></div>
+      </div>
+    </section>
+
+    <section class="section section--soft" id="catalogo" aria-labelledby="catalogTitle">
+      <div class="container">
+        <div class="section__head section__head--row">
+          <div>
+            <h2 id="catalogTitle">Catálogo</h2>
+            <p id="catalogInfo">30 productos disponibles</p>
+          </div>
+          <div class="toolbar">
+            <label for="sortSelect" class="sr-only">Ordenar</label>
+            <select id="sortSelect">
+              <option value="relevance">Destacados</option>
+              <option value="price-asc">Precio: menor a mayor</option>
+              <option value="price-desc">Precio: mayor a menor</option>
+              <option value="name">Nombre A-Z</option>
+            </select>
+          </div>
+        </div>
+        <div class="chips" id="filterChips" role="toolbar" aria-label="Filtrar por categoría"></div>
+        <div class="grid" id="productGrid" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <section class="section steps" aria-labelledby="stepsTitle">
+      <div class="container">
+        <div class="section__head">
+          <h2 id="stepsTitle">Comprar es así de simple</h2>
+          <p>Sin pasarelas ni tarjetas en la web: todo se coordina con una persona real.</p>
+        </div>
+        <ol class="steps__list">
+          <li><span>1</span><h3>Arma tu carrito</h3><p>Agrega productos tú mismo o pídeselo a Azur en el chat.</p></li>
+          <li><span>2</span><h3>Deja tus datos</h3><p>Nombre, correo y celular para registrar tu pedido de forma segura.</p></li>
+          <li><span>3</span><h3>Cierra por WhatsApp</h3><p>Te llevamos a WhatsApp con el resumen listo para coordinar pago y entrega.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="ally" id="aliados" aria-labelledby="allyTitle">
+      <div class="container ally__grid">
+        <div class="ally__copy">
+          <span class="eyebrow eyebrow--light">Programa B2B</span>
+          <h2 id="allyTitle">Conviértete en nuestro aliado</h2>
+          <p class="ally__lead">Precios al por mayor altamente atractivos a partir de las 50 unidades.</p>
+          <ul class="ally__benefits">
+            <li><strong>Tarifas escalonadas</strong> por volumen desde 50 unidades por SKU.</li>
+            <li><strong>Ejecutivo dedicado</strong> que te acompaña de la cotización a la entrega.</li>
+            <li><strong>Catálogo listo para vender</strong>: fotos y fichas para tu tienda o bazar.</li>
+            <li><strong>Despacho a todo el Perú</strong> coordinado con tu equipo.</li>
+          </ul>
+          <img class="ally__img" src="https://images.unsplash.com/photo-1617806118233-18e1de247200?auto=format&fit=crop&w=900&q=70" alt="Comedor con sillas verdes y decoración moderna" width="900" height="600" loading="lazy">
+        </div>
+
+        <div class="ally__card">
+          <form id="allyForm" novalidate>
+            <div class="stepper" aria-hidden="true"><span class="is-active">1. Tus datos</span><span>2. Plazo</span><span>3. Confirmación</span></div>
+
+            <fieldset class="ally-step" data-step="1">
+              <legend>Cuéntanos sobre ti</legend>
+              <div class="field"><label for="aNombre">Nombre completo</label><input id="aNombre" name="nombre" required maxlength="80" autocomplete="name"></div>
+              <div class="field-row">
+                <div class="field"><label for="aCorreo">Correo electrónico</label><input id="aCorreo" name="correo" type="email" required maxlength="120" autocomplete="email"></div>
+                <div class="field"><label for="aCelular">Celular</label><input id="aCelular" name="celular" type="tel" required maxlength="15" placeholder="9XXXXXXXX" autocomplete="tel"></div>
+              </div>
+              <div class="field-row">
+                <div class="field"><label for="aEmpresa">Empresa</label><input id="aEmpresa" name="empresa" required maxlength="100" autocomplete="organization"></div>
+                <div class="field"><label for="aCargo">Cargo</label><input id="aCargo" name="cargo" required maxlength="80" autocomplete="organization-title"></div>
+              </div>
+              <input class="hp" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+              <button type="button" class="btn btn--primary btn--block" data-next>Continuar</button>
+            </fieldset>
+
+            <fieldset class="ally-step" data-step="2" hidden>
+              <legend>¿Cuándo quiere empezar?</legend>
+              <div class="radio-list" id="urgencyList">
+                <label><input type="radio" name="urgencia" value="Lo más pronto posible"><span>Lo más pronto posible <small>Agenda una reunión hoy mismo</small></span></label>
+                <label><input type="radio" name="urgencia" value="Entre uno y tres meses"><span>Entre uno y tres meses</span></label>
+                <label><input type="radio" name="urgencia" value="Después de tres meses"><span>Después de tres meses</span></label>
+                <label><input type="radio" name="urgencia" value="Solo estoy consultando información"><span>Solo estoy consultando información</span></label>
+              </div>
+              <div class="slots" id="slotsBox" hidden>
+                <p class="slots__title">Elige un horario para tu reunión <small>(hora Perú · Lun-Vie 9:00-17:00 · Sáb 9:00-13:00)</small></p>
+                <div class="slots__days" id="slotDays" role="tablist" aria-label="Días disponibles"></div>
+                <div class="slots__times" id="slotTimes"></div>
+                <p class="slots__status" id="slotStatus" aria-live="polite"></p>
+              </div>
+              <div class="form-actions">
+                <button type="button" class="btn btn--ghost" data-prev>Atrás</button>
+                <button type="submit" class="btn btn--primary" id="allySubmit">Enviar solicitud</button>
+              </div>
+            </fieldset>
+
+            <div class="ally-step ally-done" data-step="3" hidden aria-live="polite">
+              <img src="assets/img/azur.svg" alt="" width="64" height="64">
+              <h3 id="allyDoneTitle">¡Listo!</h3>
+              <p id="allyDoneText"></p>
+              <a class="btn btn--wa btn--block" id="allyDoneWa" href="#" target="_blank" rel="noopener">Escribir por WhatsApp</a>
+              <p class="muted small">También te enviamos un correo con tu código QR y los beneficios del programa.</p>
+            </div>
+            <p class="form-error" id="allyError" role="alert"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="reviewsTitle">
+      <div class="container">
+        <div class="section__head">
+          <h2 id="reviewsTitle">Lo que dicen nuestros clientes</h2>
+          <p>Opiniones de clientes de ejemplo.</p>
+        </div>
+        <div class="reviews" id="reviews"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div>
+        <img src="assets/img/logo.svg" alt="Importaciones Azur" width="180" height="39" class="footer__logo">
+        <p>Tienda 100% virtual de artículos para el hogar en Perú. No procesamos pagos en la web: todo se coordina de forma segura por WhatsApp.</p>
+      </div>
+      <div>
+        <h3>Compra</h3>
+        <ul><li><a href="#catalogo">Catálogo</a></li><li><a href="#aliados">Ventas al por mayor</a></li><li><button type="button" class="linklike" data-open-chat>Habla con Azur</button></li></ul>
+      </div>
+      <div>
+        <h3>Contacto</h3>
+        <ul><li><a href="https://wa.me/51982770361" target="_blank" rel="noopener">WhatsApp +51 982 770 361</a></li><li>Lima, Perú · Atención L-S</li></ul>
+      </div>
+    </div>
+    <p class="footer__legal container">© <span id="year"></span> Importaciones Azur. Imágenes referenciales de Unsplash.</p>
+  </footer>
+
+  <!-- Carrito -->
+  <div class="overlay" id="overlay" hidden></div>
+  <aside class="drawer" id="cartDrawer" aria-labelledby="cartTitle" aria-hidden="true">
+    <div class="drawer__head">
+      <h2 id="cartTitle">Tu carrito</h2>
+      <button type="button" class="icon-btn" id="cartClose" aria-label="Cerrar carrito">✕</button>
+    </div>
+    <div class="drawer__body" id="cartItems"></div>
+    <div class="drawer__foot">
+      <div class="totals"><span>Subtotal</span><strong id="cartSubtotal">S/ 0.00</strong></div>
+      <p class="muted small">El pago y la entrega se coordinan por WhatsApp.</p>
+      <button type="button" class="btn btn--primary btn--block" id="checkoutOpen" disabled>Finalizar pedido</button>
+    </div>
+  </aside>
+
+  <!-- Checkout -->
+  <dialog class="modal" id="checkoutModal" aria-labelledby="checkoutTitle">
+    <form id="checkoutForm" method="dialog" novalidate>
+      <div class="modal__head">
+        <h2 id="checkoutTitle">Confirma tus datos</h2>
+        <button type="button" class="icon-btn" data-close-modal aria-label="Cerrar">✕</button>
+      </div>
+      <div class="checkout-summary" id="checkoutSummary"></div>
+      <div class="field"><label for="cNombre">Nombre completo</label><input id="cNombre" name="nombre" required maxlength="80" autocomplete="name"></div>
+      <div class="field"><label for="cCorreo">Correo electrónico</label><input id="cCorreo" name="correo" type="email" required maxlength="120" autocomplete="email"></div>
+      <div class="field"><label for="cCelular">Celular</label><input id="cCelular" name="celular" type="tel" required maxlength="15" placeholder="9XXXXXXXX" autocomplete="tel"></div>
+      <input class="hp" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <p class="muted small">Usaremos tus datos solo para coordinar este pedido.</p>
+      <p class="form-error" id="checkoutError" role="alert"></p>
+      <button type="submit" class="btn btn--wa btn--block" id="checkoutSubmit">
+        <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.3 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.3-.3.6-.3.8-.3h.6c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .6l-.4.6-.4.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.3 2.4 1.5.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.7-.1l2 1c.3.1.5.2.5.3.1.2.1.7-.1 1.3Z"/></svg>
+        Confirmar y abrir WhatsApp
+      </button>
+    </form>
+  </dialog>
+
+  <!-- Chat Azur -->
+  <button type="button" class="chat-fab" id="chatFab" aria-label="Abrir chat con Azur" data-open-chat>
+    <img src="assets/img/azur.svg" alt="" width="58" height="58">
+    <span class="chat-fab__dot"></span>
+  </button>
+  <section class="chat" id="chat" aria-label="Chat con Azur" hidden>
+    <header class="chat__head">
+      <img src="assets/img/azur.svg" alt="" width="40" height="40">
+      <div><strong>Azur</strong><span>Asistente de Importaciones Azur</span></div>
+      <button type="button" class="icon-btn icon-btn--light" id="chatClose" aria-label="Cerrar chat">✕</button>
+    </header>
+    <div class="chat__body" id="chatBody" aria-live="polite"></div>
+    <div class="chat__chips" id="chatChips"></div>
+    <form class="chat__form" id="chatForm">
+      <label for="chatInput" class="sr-only">Escribe tu mensaje</label>
+      <input id="chatInput" maxlength="500" placeholder="Escribe tu mensaje…" autocomplete="off">
+      <button type="submit" class="chat__send" aria-label="Enviar">
+        <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M3 20.5 21 12 3 3.5l.01 6.6L15 12 3.01 13.9 3 20.5Z"/></svg>
+      </button>
+    </form>
+    <p class="chat__note">Azur no procesa pagos ni ve datos de otros clientes.</p>
+  </section>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script type="module" src="assets/js/app.js"></script>
+</body>
+</html>
