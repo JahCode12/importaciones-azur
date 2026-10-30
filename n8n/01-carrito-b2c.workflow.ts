@@ -9,7 +9,7 @@ const pedidoWebhook = trigger({
       httpMethod: 'POST',
       path: 'azur-pedido',
       responseMode: 'responseNode',
-      options: { allowedOrigins: '*', ignoreBots: true }
+      options: { allowedOrigins: 'https://importaciones-azur.vercel.app', ignoreBots: true }
     }
   },
   output: [{ body: { nombre: 'María Quispe', correo: 'maria@example.com', celular: '987654321', items: [{ sku: 'AZ-COC-001', qty: 1 }], website: '' } }]

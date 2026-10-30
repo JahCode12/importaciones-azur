@@ -9,7 +9,7 @@ const disponibilidadWebhook = trigger({
       httpMethod: 'GET',
       path: 'azur-disponibilidad',
       responseMode: 'responseNode',
-      options: { allowedOrigins: '*', ignoreBots: true }
+      options: { allowedOrigins: 'https://importaciones-azur.vercel.app', ignoreBots: true }
     }
   },
   output: [{ query: {} }]

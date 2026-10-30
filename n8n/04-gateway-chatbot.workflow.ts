@@ -9,7 +9,7 @@ const chatWebhook = trigger({
       httpMethod: 'POST',
       path: 'azur-chat',
       responseMode: 'responseNode',
-      options: { allowedOrigins: '*', ignoreBots: true }
+      options: { allowedOrigins: 'https://importaciones-azur.vercel.app', ignoreBots: true }
     }
   },
   output: [{ body: { message: 'Busco algo para ordenar mi cocina', history: [], cart: [] } }]

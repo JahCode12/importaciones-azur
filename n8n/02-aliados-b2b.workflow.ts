@@ -9,7 +9,7 @@ const aliadoWebhook = trigger({
       httpMethod: 'POST',
       path: 'azur-aliado',
       responseMode: 'responseNode',
-      options: { allowedOrigins: '*', ignoreBots: true }
+      options: { allowedOrigins: 'https://importaciones-azur.vercel.app', ignoreBots: true }
     }
   },
   output: [{ body: { nombre: 'Rosa Huamán', correo: 'rosa@empresa.pe', celular: '987654321', empresa: 'Bazar Rosa SAC', cargo: 'Gerente', urgencia: 'Lo más pronto posible', cita: '2026-11-02T10:00:00-05:00', website: '' } }]
