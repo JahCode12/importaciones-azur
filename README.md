@@ -12,7 +12,7 @@ assets/js/catalog.js       Generado desde data/catalog.json (no editar a mano)
 assets/js/config.js        URLs públicas de los webhooks de n8n
 assets/img/                Logo, favicon y mascota "Azur" (SVG originales)
 data/catalog.json          Inventario fuente: 30 productos, 6 categorías
-n8n/*.workflow.ts          Código fuente (Workflow SDK) de los 4 flujos de n8n
+n8n/azur-ecosistema.workflow.ts  Código fuente (Workflow SDK) del workflow único de n8n
 scripts/build-catalog.mjs  Regenera catalog.js
 vercel.json                Cabeceras de seguridad y CSP
 ```
@@ -27,18 +27,29 @@ Servidor local: `npm run dev` → http://localhost:5173
 
 ## Flujos de n8n
 
+Todo vive en **un solo workflow** de n8n, *Azur · Ecosistema completo*, con 4 webhooks de entrada y un grupo visual por flujo:
+
+
 | Flujo | Webhook | Qué hace |
 |---|---|---|
-| Azur · Gateway del Chatbot | `POST /webhook/azur-chat` | Guardrail de entrada → agente gpt-4o-mini con herramienta `consultar_inventario` → guardrail de salida |
-| Azur · Procesamiento de Carrito B2C | `POST /webhook/azur-pedido` | Revalida datos y **precios en servidor**, registra en `Ventas`, alerta por Gmail, devuelve el enlace de WhatsApp |
-| Azur · Procesamiento de Aliados B2B | `POST /webhook/azur-aliado` | Valida, lee historial, asigna vendedor (urgencia + round-robin), verifica y crea cita en Calendar, envía PromoMail con QR, registra en `Posibles Aliados` y alerta por Gmail |
-| Azur · Disponibilidad Calendar | `GET /webhook/azur-disponibilidad` | Devuelve **solo** bloques libres anónimos (L-V 9:00-17:00, Sáb 9:00-13:00, hora Perú) |
+| 1 · Chatbot Azur | `POST /webhook/azur-chat` | Guardrail de entrada → agente gpt-4o-mini con herramienta `consultar_inventario` → guardrail de salida |
+| 2 · Carrito B2C | `POST /webhook/azur-pedido` | Revalida datos y **precios en servidor**, registra en `Ventas`, alerta por Gmail, devuelve el enlace de WhatsApp |
+| 3 · Aliados B2B | `POST /webhook/azur-aliado` | Valida, lee historial, asigna vendedor (urgencia + round-robin), verifica y crea cita en Calendar, envía PromoMail con QR, registra en `Posibles Aliados` y alerta por Gmail |
+| 4 · Disponibilidad Calendar | `GET /webhook/azur-disponibilidad` | Devuelve **solo** bloques libres anónimos (L-V 9:00-17:00, Sáb 9:00-13:00, hora Perú) |
 
 ### Asignación de vendedores
 
 - Pool A (urgencia alta/media-alta: *Lo más pronto posible*, *Entre uno y tres meses*): **Ana ↔ Bella**.
 - Pool B (urgencia media-baja/informativa: *Después de tres meses*, *Solo estoy consultando información*): **Charlie ↔ Delfi**.
 - El estado vive en la pestaña `Posibles Aliados`: se toma el último asesor del pool y se rota al siguiente; además se compara con el último lead general para que **nunca** se repita asesor en dos leads consecutivos.
+
+## Ficha de producto
+
+Cada producto abre una ficha con zoom (cursor en escritorio, toque en móvil), imagen de 1400 px y especificaciones (medidas, material, color, peso, contenido y cuidados) definidas en `data/catalog.json`. Enlace directo: `/#p=AZ-COC-001`.
+
+## PromoMail
+
+Incluye logo (PNG en `assets/img/email/`), beneficios (precio mayorista, asesoría para importaciones, mini curso de importaciones, ejecutivo dedicado, despacho), testimonios ilustrativos, botón de WhatsApp y QR. Vista previa: `tests/promomail-preview.html`.
 
 ## Seguridad
 

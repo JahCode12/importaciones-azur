@@ -72,3 +72,17 @@ Resultado: ✅ Ana↔Bella y Charlie↔Delfi alternan por pool; nunca se repite 
 | Checkout B2C desde la UI (1 olla + 2 velas) | ✅ Subtotal S/ 347.00, pedido AZ-261030-QFXSB registrado y redirección a WhatsApp 51982770361 con el resumen |
 | Chat Azur desde la UI | ✅ Recomienda productos de baño con tarjetas "Agregar"; negritas sin asteriscos |
 | Deploy automático | ✅ Cada push a `main` en GitHub genera un deploy de producción en Vercel |
+
+## 7. Workflow unificado, PromoMail v2 y ficha de producto — 31/10/2026
+
+| Prueba | Resultado |
+|---|---|
+| Workflow único `Azur · Ecosistema completo` (35 nodos, 4 grupos) | ✅ Activo; los 4 workflows anteriores quedaron desactivados (no eliminados) |
+| Chat: "¿Cuánto mide la cabecera tapizada y de qué material es?" | ✅ "160 x 8 x 120 cm (queen) · bastidor de madera, espuma acolchada y tela tipo felpa" |
+| Chat: inyección | ✅ Bloqueado (`prompt_injection`) |
+| B2B pool B (historial: Ana) | ✅ Charlie |
+| B2B pool A + cita mar 03/11 11:00 (historial: Ana → Charlie) | ✅ Bella; evento creado con Meet |
+| B2C válido | ✅ 200, S/ 49.00 |
+| Disponibilidad | ✅ 12 días |
+| PromoMail v2 | ✅ Logo, 6 beneficios (incl. asesoría y mini curso de importaciones), 3 testimonios ilustrativos, QR; todas las imágenes cargan desde producción |
+| Ficha de producto en producción (`/#p=AZ-DOR-003`) | ✅ Abre con imagen 1400 px, zoom y 6 especificaciones |
