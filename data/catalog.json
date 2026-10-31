@@ -1,32 +1,512 @@
 [
-  {"sku":"AZ-ORG-001","name":"Repisa Nicho Roble","category":"Organización","price":189,"stock":24,"img":"1595428774223-ef52624120d2","desc":"Repisa vertical de 8 nichos en melamina acabado roble. Ideal para libros, plantas y objetos decorativos."},
-  {"sku":"AZ-ORG-002","name":"Set 3 Repisas Flotantes","category":"Organización","price":129,"stock":40,"img":"1594026112284-02bb6f3352fe","desc":"Trío de repisas flotantes con anclaje oculto. Soportan hasta 10 kg cada una."},
-  {"sku":"AZ-ORG-003","name":"Cajonera Nórdica 4 Cajones","category":"Organización","price":459,"stock":12,"img":"1513694203232-719a280e022f","desc":"Cajonera blanca de líneas limpias con correderas suaves. Orden total para ropa y accesorios."},
-  {"sku":"AZ-ORG-004","name":"Taburete Multiuso de Madera","category":"Organización","price":119,"stock":30,"img":"1503602642458-232111445657","desc":"Taburete de madera maciza que funciona como escalón, mesa auxiliar o apoyo en cocina."},
-  {"sku":"AZ-ORG-005","name":"Ropero Organizador Nogal","category":"Organización","price":899,"stock":6,"img":"1558997519-83ea9252edf8","desc":"Ropero de dos puertas en tono nogal con barra para colgar y repisa superior."},
-  {"sku":"AZ-COC-001","name":"Olla Esmaltada Roja 5 L","category":"Cocina","price":249,"stock":18,"img":"1556909114-f6e7ad7d3136","desc":"Olla de hierro fundido esmaltado, apta para todo tipo de cocina. Retiene el calor y el sabor."},
-  {"sku":"AZ-COC-002","name":"Set 5 Vasos Cerámica Arena","category":"Cocina","price":89,"stock":50,"img":"1610701596007-11502861dcfa","desc":"Vasos de cerámica artesanal con esmalte arena y base natural. Aptos para lavavajillas."},
-  {"sku":"AZ-COC-003","name":"Taza Porcelana Nube 350 ml","category":"Cocina","price":29,"stock":120,"img":"1514228742587-6b1558fcca3d","desc":"Taza de porcelana blanca de paredes gruesas para tu café de cada mañana."},
-  {"sku":"AZ-COC-004","name":"Grifería Monocomando Dorada","category":"Cocina","price":389,"stock":15,"img":"1565538810643-b5bdb714032a","desc":"Grifo de cocina cuello de cisne en acabado dorado cepillado, cartucho cerámico de larga duración."},
-  {"sku":"AZ-COC-005","name":"Set Ollas Acero Inox 6 Piezas","category":"Cocina","price":429,"stock":20,"img":"1556911220-bff31c812dba","desc":"Batería de acero inoxidable con fondo difusor triple. Incluye tapas de vidrio templado."},
-  {"sku":"AZ-DOR-001","name":"Velador Nórdico con Cajón","category":"Dormitorio","price":279,"stock":22,"img":"1522771739844-6a9f6d5f14af","desc":"Mesa de noche con cajón y patas de madera. Diseño nórdico que combina con todo."},
-  {"sku":"AZ-DOR-002","name":"Banca Pie de Cama Capitoneada","category":"Dormitorio","price":549,"stock":9,"img":"1505693416388-ac5ce068fe85","desc":"Banca tapizada en lino con capitoné, perfecta a los pies de la cama o en el vestidor."},
-  {"sku":"AZ-DOR-003","name":"Cabecera Tapizada Grafito","category":"Dormitorio","price":639,"stock":8,"img":"1631049307264-da0ec9d70304","desc":"Cabecera acolchada en tela gris grafito para camas de 2 plazas y queen."},
-  {"sku":"AZ-DOR-004","name":"Par de Banquetas Terracota","category":"Dormitorio","price":399,"stock":14,"img":"1540518614846-7eded433c457","desc":"Dos banquetas tapizadas en terracota con estructura metálica negra."},
-  {"sku":"AZ-DOR-005","name":"Butaca de Lectura Mostaza","category":"Dormitorio","price":699,"stock":7,"img":"1586023492125-27b2c045efd7","desc":"Butaca de líneas curvas en tono mostaza, ideal para tu rincón de lectura."},
-  {"sku":"AZ-BAN-001","name":"Toallero Barra Negro Mate","category":"Baño","price":79,"stock":60,"img":"1584622650111-993a426fbf0a","desc":"Toallero de acero inoxidable con acabado negro mate, 60 cm. Incluye kit de instalación."},
-  {"sku":"AZ-BAN-002","name":"Lavatorio de Pedestal Clásico","category":"Baño","price":349,"stock":10,"img":"1552321554-5fefe8c9ef14","desc":"Lavatorio de porcelana vitrificada con pedestal. Estilo atemporal para baños luminosos."},
-  {"sku":"AZ-BAN-003","name":"Bandeja de Bambú para Tina","category":"Baño","price":119,"stock":35,"img":"1620626011761-996317b8d101","desc":"Bandeja extensible de bambú para tina, con soporte para libro, copa y celular."},
-  {"sku":"AZ-BAN-004","name":"Mueble Flotante con Lavabo","category":"Baño","price":1290,"stock":5,"img":"1629079447777-1e605162dc8d","desc":"Mueble de baño suspendido con lavabo integrado y cajones de cierre lento."},
-  {"sku":"AZ-BAN-005","name":"Espejo Redondo LED 60 cm","category":"Baño","price":359,"stock":16,"img":"1604709177225-055f99402ea3","desc":"Espejo redondo con iluminación LED perimetral y sistema antiempañante."},
-  {"sku":"AZ-DEC-001","name":"Tapiz Macramé Artesanal","category":"Decoración","price":159,"stock":25,"img":"1556228453-efd6c1ff04f6","desc":"Tapiz de macramé tejido a mano en algodón crudo. Aporta calidez y textura a cualquier pared."},
-  {"sku":"AZ-DEC-002","name":"Vela Aromática Ámbar y Cedro","category":"Decoración","price":49,"stock":90,"img":"1602874801007-bd458bb1b8b6","desc":"Vela de cera de soya en vaso de vidrio ahumado. Hasta 45 horas de aroma."},
-  {"sku":"AZ-DEC-003","name":"Arreglo de Pampa Natural","category":"Decoración","price":69,"stock":45,"img":"1578500494198-246f612d3b3d","desc":"Ramo de hierba de pampa preservada. Decoración natural que no necesita agua."},
-  {"sku":"AZ-DEC-004","name":"Set Galería 9 Marcos","category":"Decoración","price":199,"stock":19,"img":"1600210492486-724fe5c67fb0","desc":"Nueve marcos negros con paspartú para armar tu pared de recuerdos."},
-  {"sku":"AZ-DEC-005","name":"Lámpara Colgante Globo Cristal","category":"Decoración","price":289,"stock":13,"img":"1507089947368-19c1da9775ae","desc":"Lámpara de techo con globo de vidrio transparente y detalles dorados."},
-  {"sku":"AZ-TEX-001","name":"Funda de Cojín Rayas Terracota","category":"Textil","price":45,"stock":80,"img":"1616627561950-9f746e330187","desc":"Funda 45x45 cm en algodón con rayas terracota y cierre invisible."},
-  {"sku":"AZ-TEX-002","name":"Set 4 Cojines Decorativos","category":"Textil","price":139,"stock":32,"img":"1484101403633-562f891dc89a","desc":"Cuatro cojines combinables en tonos neutros y estampados geométricos, con relleno."},
-  {"sku":"AZ-TEX-003","name":"Cojines Terciopelo Verde x2","category":"Textil","price":99,"stock":44,"img":"1493663284031-b7e3aefcae8e","desc":"Par de cojines de terciopelo verde azulado, suaves al tacto y de color intenso."},
-  {"sku":"AZ-TEX-004","name":"Edredón Gris Perla Queen","category":"Textil","price":329,"stock":17,"img":"1595526114035-0d45ed16cfbf","desc":"Edredón de microfibra hipoalergénica en gris perla, cálido y ligero."},
-  {"sku":"AZ-TEX-005","name":"Alfombra Beige 160x230","category":"Textil","price":379,"stock":11,"img":"1616486338812-3dadae4b4ace","desc":"Alfombra de pelo corto en tono beige, fácil de limpiar y antideslizante."}
+  {
+    "sku": "AZ-ORG-001",
+    "name": "Repisa Nicho Roble",
+    "category": "Organización",
+    "price": 189,
+    "stock": 24,
+    "img": "1595428774223-ef52624120d2",
+    "desc": "Repisa vertical de 8 nichos en melamina acabado roble. Ideal para libros, plantas y objetos decorativos.",
+    "specs": {
+      "Medidas": "180 x 60 x 30 cm",
+      "Material": "Melamina de 18 mm acabado roble",
+      "Color": "Roble natural",
+      "Peso": "24 kg",
+      "Incluye": "Herrajes, tarugos y manual de armado",
+      "Cuidados": "Limpiar con paño seco o ligeramente húmedo. Evitar sol directo prolongado."
+    }
+  },
+  {
+    "sku": "AZ-ORG-002",
+    "name": "Set 3 Repisas Flotantes",
+    "category": "Organización",
+    "price": 129,
+    "stock": 40,
+    "img": "1594026112284-02bb6f3352fe",
+    "desc": "Trío de repisas flotantes con anclaje oculto. Soportan hasta 10 kg cada una.",
+    "specs": {
+      "Medidas": "60 x 20 x 3,8 cm (c/u)",
+      "Material": "MDF laqueado con soporte metálico oculto",
+      "Color": "Blanco y roble",
+      "Peso": "4,5 kg (set)",
+      "Incluye": "3 repisas, soportes y tornillería",
+      "Cuidados": "Paño seco. No sobrepasar 10 kg por repisa."
+    }
+  },
+  {
+    "sku": "AZ-ORG-003",
+    "name": "Cajonera Nórdica 4 Cajones",
+    "category": "Organización",
+    "price": 459,
+    "stock": 12,
+    "img": "1513694203232-719a280e022f",
+    "desc": "Cajonera blanca de líneas limpias con correderas suaves. Orden total para ropa y accesorios.",
+    "specs": {
+      "Medidas": "80 x 45 x 95 cm",
+      "Material": "MDF laqueado, correderas metálicas telescópicas",
+      "Color": "Blanco mate",
+      "Peso": "38 kg",
+      "Incluye": "Jaladores, herrajes y manual de armado",
+      "Cuidados": "Paño húmedo con jabón neutro. Secar de inmediato."
+    }
+  },
+  {
+    "sku": "AZ-ORG-004",
+    "name": "Taburete Multiuso de Madera",
+    "category": "Organización",
+    "price": 119,
+    "stock": 30,
+    "img": "1503602642458-232111445657",
+    "desc": "Taburete de madera maciza que funciona como escalón, mesa auxiliar o apoyo en cocina.",
+    "specs": {
+      "Medidas": "35 x 35 x 65 cm",
+      "Material": "Madera maciza de pino barnizada",
+      "Color": "Madera natural",
+      "Peso": "3,2 kg",
+      "Incluye": "Taburete armado",
+      "Cuidados": "Paño seco. Aplicar cera para madera cada 6 meses."
+    }
+  },
+  {
+    "sku": "AZ-ORG-005",
+    "name": "Ropero Organizador Nogal",
+    "category": "Organización",
+    "price": 899,
+    "stock": 6,
+    "img": "1558997519-83ea9252edf8",
+    "desc": "Ropero de dos puertas en tono nogal con barra para colgar y repisa superior.",
+    "specs": {
+      "Medidas": "90 x 52 x 180 cm",
+      "Material": "Melamina de 18 mm tono nogal, bisagras cierre suave",
+      "Color": "Nogal",
+      "Peso": "62 kg",
+      "Incluye": "Barra colgadora, repisa, herrajes y manual",
+      "Cuidados": "Paño seco. Ajustar bisagras una vez al año."
+    }
+  },
+  {
+    "sku": "AZ-COC-001",
+    "name": "Olla Esmaltada Roja 5 L",
+    "category": "Cocina",
+    "price": 249,
+    "stock": 18,
+    "img": "1556909114-f6e7ad7d3136",
+    "desc": "Olla de hierro fundido esmaltado, apta para todo tipo de cocina. Retiene el calor y el sabor.",
+    "specs": {
+      "Medidas": "Ø 26 cm · alto 13 cm · 5 L",
+      "Material": "Hierro fundido con esmalte vitrificado",
+      "Color": "Rojo cereza",
+      "Peso": "4,8 kg",
+      "Incluye": "Olla con tapa",
+      "Cuidados": "Lavar a mano con agua tibia. Apta para inducción, gas, eléctrica y horno hasta 250 °C."
+    }
+  },
+  {
+    "sku": "AZ-COC-002",
+    "name": "Set 5 Vasos Cerámica Arena",
+    "category": "Cocina",
+    "price": 89,
+    "stock": 50,
+    "img": "1610701596007-11502861dcfa",
+    "desc": "Vasos de cerámica artesanal con esmalte arena y base natural. Aptos para lavavajillas.",
+    "specs": {
+      "Medidas": "Ø 8 cm · alto 10 cm · 350 ml (c/u)",
+      "Material": "Cerámica gres esmaltada",
+      "Color": "Arena con base natural",
+      "Peso": "1,6 kg (set)",
+      "Incluye": "5 vasos",
+      "Cuidados": "Apto para lavavajillas y microondas."
+    }
+  },
+  {
+    "sku": "AZ-COC-003",
+    "name": "Taza Porcelana Nube 350 ml",
+    "category": "Cocina",
+    "price": 29,
+    "stock": 120,
+    "img": "1514228742587-6b1558fcca3d",
+    "desc": "Taza de porcelana blanca de paredes gruesas para tu café de cada mañana.",
+    "specs": {
+      "Medidas": "Ø 9 cm · alto 9,5 cm · 350 ml",
+      "Material": "Porcelana blanca de alta temperatura",
+      "Color": "Blanco",
+      "Peso": "380 g",
+      "Incluye": "1 taza",
+      "Cuidados": "Apta para lavavajillas y microondas."
+    }
+  },
+  {
+    "sku": "AZ-COC-004",
+    "name": "Grifería Monocomando Dorada",
+    "category": "Cocina",
+    "price": 389,
+    "stock": 15,
+    "img": "1565538810643-b5bdb714032a",
+    "desc": "Grifo de cocina cuello de cisne en acabado dorado cepillado, cartucho cerámico de larga duración.",
+    "specs": {
+      "Medidas": "Alto 42 cm · alcance 22 cm",
+      "Material": "Latón con acabado PVD dorado cepillado, cartucho cerámico 35 mm",
+      "Color": "Dorado cepillado",
+      "Peso": "2,1 kg",
+      "Incluye": "Grifería, mangueras flexibles y kit de fijación",
+      "Cuidados": "Limpiar con paño suave y agua. Evitar productos abrasivos o con cloro."
+    }
+  },
+  {
+    "sku": "AZ-COC-005",
+    "name": "Set Ollas Acero Inox 6 Piezas",
+    "category": "Cocina",
+    "price": 429,
+    "stock": 20,
+    "img": "1556911220-bff31c812dba",
+    "desc": "Batería de acero inoxidable con fondo difusor triple. Incluye tapas de vidrio templado.",
+    "specs": {
+      "Medidas": "Ollas de 16, 20 y 24 cm · sartén 24 cm",
+      "Material": "Acero inoxidable 18/10 con fondo triple difusor",
+      "Color": "Acero pulido",
+      "Peso": "5,4 kg (set)",
+      "Incluye": "3 ollas, 1 sartén y 2 tapas de vidrio templado",
+      "Cuidados": "Apto para lavavajillas e inducción."
+    }
+  },
+  {
+    "sku": "AZ-DOR-001",
+    "name": "Velador Nórdico con Cajón",
+    "category": "Dormitorio",
+    "price": 279,
+    "stock": 22,
+    "img": "1522771739844-6a9f6d5f14af",
+    "desc": "Mesa de noche con cajón y patas de madera. Diseño nórdico que combina con todo.",
+    "specs": {
+      "Medidas": "45 x 35 x 55 cm",
+      "Material": "MDF laqueado con patas de madera de pino",
+      "Color": "Blanco y madera",
+      "Peso": "8 kg",
+      "Incluye": "Velador y patas desmontables",
+      "Cuidados": "Paño seco o ligeramente húmedo."
+    }
+  },
+  {
+    "sku": "AZ-DOR-002",
+    "name": "Banca Pie de Cama Capitoneada",
+    "category": "Dormitorio",
+    "price": 549,
+    "stock": 9,
+    "img": "1505693416388-ac5ce068fe85",
+    "desc": "Banca tapizada en lino con capitoné, perfecta a los pies de la cama o en el vestidor.",
+    "specs": {
+      "Medidas": "120 x 40 x 46 cm",
+      "Material": "Estructura de madera, espuma de alta densidad y tapiz de lino",
+      "Color": "Gris perla",
+      "Peso": "14 kg",
+      "Incluye": "Banca armada",
+      "Cuidados": "Aspirar con boquilla de tapicería. Limpiar manchas con paño húmedo."
+    }
+  },
+  {
+    "sku": "AZ-DOR-003",
+    "name": "Cabecera Tapizada Grafito",
+    "category": "Dormitorio",
+    "price": 639,
+    "stock": 8,
+    "img": "1631049307264-da0ec9d70304",
+    "desc": "Cabecera acolchada en tela gris grafito para camas de 2 plazas y queen.",
+    "specs": {
+      "Medidas": "160 x 8 x 120 cm (queen)",
+      "Material": "Bastidor de madera, espuma acolchada y tela tipo felpa",
+      "Color": "Gris grafito",
+      "Peso": "16 kg",
+      "Incluye": "Cabecera, patas de anclaje y tornillería",
+      "Cuidados": "Aspirar suavemente. Manchas con paño húmedo y jabón neutro."
+    }
+  },
+  {
+    "sku": "AZ-DOR-004",
+    "name": "Par de Banquetas Terracota",
+    "category": "Dormitorio",
+    "price": 399,
+    "stock": 14,
+    "img": "1540518614846-7eded433c457",
+    "desc": "Dos banquetas tapizadas en terracota con estructura metálica negra.",
+    "specs": {
+      "Medidas": "40 x 40 x 45 cm (c/u)",
+      "Material": "Estructura metálica con pintura electrostática y tapiz bouclé",
+      "Color": "Terracota y negro",
+      "Peso": "9 kg (par)",
+      "Incluye": "2 banquetas",
+      "Cuidados": "Aspirar. Limpiar manchas con paño húmedo."
+    }
+  },
+  {
+    "sku": "AZ-DOR-005",
+    "name": "Butaca de Lectura Mostaza",
+    "category": "Dormitorio",
+    "price": 699,
+    "stock": 7,
+    "img": "1586023492125-27b2c045efd7",
+    "desc": "Butaca de líneas curvas en tono mostaza, ideal para tu rincón de lectura.",
+    "specs": {
+      "Medidas": "78 x 80 x 82 cm · asiento a 44 cm",
+      "Material": "Madera de eucalipto, espuma de alta densidad y tela antimanchas",
+      "Color": "Mostaza",
+      "Peso": "21 kg",
+      "Incluye": "Butaca y patas desmontables",
+      "Cuidados": "Aspirar. La tela antimanchas se limpia con paño húmedo."
+    }
+  },
+  {
+    "sku": "AZ-BAN-001",
+    "name": "Toallero Barra Negro Mate",
+    "category": "Baño",
+    "price": 79,
+    "stock": 60,
+    "img": "1584622650111-993a426fbf0a",
+    "desc": "Toallero de acero inoxidable con acabado negro mate, 60 cm. Incluye kit de instalación.",
+    "specs": {
+      "Medidas": "60 x 6 x 6 cm",
+      "Material": "Acero inoxidable 304 con acabado negro mate",
+      "Color": "Negro mate",
+      "Peso": "650 g",
+      "Incluye": "Toallero, tacos y tornillos",
+      "Cuidados": "Paño suave con agua. No usar productos con cloro."
+    }
+  },
+  {
+    "sku": "AZ-BAN-002",
+    "name": "Lavatorio de Pedestal Clásico",
+    "category": "Baño",
+    "price": 349,
+    "stock": 10,
+    "img": "1552321554-5fefe8c9ef14",
+    "desc": "Lavatorio de porcelana vitrificada con pedestal. Estilo atemporal para baños luminosos.",
+    "specs": {
+      "Medidas": "55 x 45 x 85 cm",
+      "Material": "Porcelana vitrificada",
+      "Color": "Blanco",
+      "Peso": "19 kg",
+      "Incluye": "Lavatorio, pedestal y kit de fijación (no incluye grifería)",
+      "Cuidados": "Limpiar con productos no abrasivos."
+    }
+  },
+  {
+    "sku": "AZ-BAN-003",
+    "name": "Bandeja de Bambú para Tina",
+    "category": "Baño",
+    "price": 119,
+    "stock": 35,
+    "img": "1620626011761-996317b8d101",
+    "desc": "Bandeja extensible de bambú para tina, con soporte para libro, copa y celular.",
+    "specs": {
+      "Medidas": "70 a 105 x 22 x 4,5 cm (extensible)",
+      "Material": "Bambú laqueado resistente a la humedad",
+      "Color": "Bambú natural",
+      "Peso": "1,9 kg",
+      "Incluye": "Bandeja con soporte para libro, copa y celular",
+      "Cuidados": "Secar después de cada uso. No dejar sumergida."
+    }
+  },
+  {
+    "sku": "AZ-BAN-004",
+    "name": "Mueble Flotante con Lavabo",
+    "category": "Baño",
+    "price": 1290,
+    "stock": 5,
+    "img": "1629079447777-1e605162dc8d",
+    "desc": "Mueble de baño suspendido con lavabo integrado y cajones de cierre lento.",
+    "specs": {
+      "Medidas": "80 x 46 x 50 cm",
+      "Material": "MDF hidrófugo laqueado con lavabo de cerámica integrado",
+      "Color": "Blanco y roble",
+      "Peso": "36 kg",
+      "Incluye": "Mueble, lavabo, desagüe y kit de anclaje a muro",
+      "Cuidados": "Paño húmedo. Secar salpicaduras de inmediato."
+    }
+  },
+  {
+    "sku": "AZ-BAN-005",
+    "name": "Espejo Redondo LED 60 cm",
+    "category": "Baño",
+    "price": 359,
+    "stock": 16,
+    "img": "1604709177225-055f99402ea3",
+    "desc": "Espejo redondo con iluminación LED perimetral y sistema antiempañante.",
+    "specs": {
+      "Medidas": "Ø 60 cm · espesor 3,5 cm",
+      "Material": "Vidrio plateado de 5 mm con marco de aluminio, LED 6000 K",
+      "Color": "Plateado con luz blanca",
+      "Peso": "6,5 kg",
+      "Incluye": "Espejo, soporte de pared y sistema antiempañante",
+      "Cuidados": "Limpiar con paño de microfibra y limpiavidrios. Conexión 220 V."
+    }
+  },
+  {
+    "sku": "AZ-DEC-001",
+    "name": "Tapiz Macramé Artesanal",
+    "category": "Decoración",
+    "price": 159,
+    "stock": 25,
+    "img": "1556228453-efd6c1ff04f6",
+    "desc": "Tapiz de macramé tejido a mano en algodón crudo. Aporta calidez y textura a cualquier pared.",
+    "specs": {
+      "Medidas": "60 x 90 cm",
+      "Material": "Algodón crudo trenzado a mano con barra de madera",
+      "Color": "Crudo natural",
+      "Peso": "750 g",
+      "Incluye": "Tapiz con barra y cordón para colgar",
+      "Cuidados": "Sacudir suavemente. No lavar a máquina."
+    }
+  },
+  {
+    "sku": "AZ-DEC-002",
+    "name": "Vela Aromática Ámbar y Cedro",
+    "category": "Decoración",
+    "price": 49,
+    "stock": 90,
+    "img": "1602874801007-bd458bb1b8b6",
+    "desc": "Vela de cera de soya en vaso de vidrio ahumado. Hasta 45 horas de aroma.",
+    "specs": {
+      "Medidas": "Ø 8 cm · alto 9 cm · 220 g",
+      "Material": "Cera de soya natural, mecha de algodón y vaso de vidrio ahumado",
+      "Color": "Ámbar ahumado",
+      "Peso": "420 g",
+      "Incluye": "Vela con tapa",
+      "Cuidados": "Recortar la mecha a 5 mm antes de cada uso. No dejar encendida sin supervisión."
+    }
+  },
+  {
+    "sku": "AZ-DEC-003",
+    "name": "Arreglo de Pampa Natural",
+    "category": "Decoración",
+    "price": 69,
+    "stock": 45,
+    "img": "1578500494198-246f612d3b3d",
+    "desc": "Ramo de hierba de pampa preservada. Decoración natural que no necesita agua.",
+    "specs": {
+      "Medidas": "Alto 80 a 100 cm · 6 tallos",
+      "Material": "Hierba de pampa natural preservada",
+      "Color": "Beige natural",
+      "Peso": "120 g",
+      "Incluye": "Ramo de 6 tallos (no incluye florero)",
+      "Cuidados": "Mantener lejos de la humedad. Rociar laca para fijar."
+    }
+  },
+  {
+    "sku": "AZ-DEC-004",
+    "name": "Set Galería 9 Marcos",
+    "category": "Decoración",
+    "price": 199,
+    "stock": 19,
+    "img": "1600210492486-724fe5c67fb0",
+    "desc": "Nueve marcos negros con paspartú para armar tu pared de recuerdos.",
+    "specs": {
+      "Medidas": "4 de 30 x 40, 4 de 20 x 25 y 1 de 50 x 70 cm",
+      "Material": "Marco de MDF, vidrio acrílico y paspartú blanco",
+      "Color": "Negro",
+      "Peso": "4,2 kg (set)",
+      "Incluye": "9 marcos, plantilla de pared y ganchos",
+      "Cuidados": "Paño seco."
+    }
+  },
+  {
+    "sku": "AZ-DEC-005",
+    "name": "Lámpara Colgante Globo Cristal",
+    "category": "Decoración",
+    "price": 289,
+    "stock": 13,
+    "img": "1507089947368-19c1da9775ae",
+    "desc": "Lámpara de techo con globo de vidrio transparente y detalles dorados.",
+    "specs": {
+      "Medidas": "Ø 25 cm · cable regulable hasta 120 cm",
+      "Material": "Vidrio soplado transparente con base metálica dorada",
+      "Color": "Transparente y dorado",
+      "Peso": "1,8 kg",
+      "Incluye": "Lámpara, florón y cable",
+      "Cuidados": "Limpiar con paño seco, siempre con la luz apagada. Rosca E27, foco no incluido."
+    }
+  },
+  {
+    "sku": "AZ-TEX-001",
+    "name": "Funda de Cojín Rayas Terracota",
+    "category": "Textil",
+    "price": 45,
+    "stock": 80,
+    "img": "1616627561950-9f746e330187",
+    "desc": "Funda 45x45 cm en algodón con rayas terracota y cierre invisible.",
+    "specs": {
+      "Medidas": "45 x 45 cm",
+      "Material": "100 % algodón tejido",
+      "Color": "Terracota y crudo",
+      "Peso": "180 g",
+      "Incluye": "Funda con cierre invisible (sin relleno)",
+      "Cuidados": "Lavar a máquina a 30 °C. No usar secadora."
+    }
+  },
+  {
+    "sku": "AZ-TEX-002",
+    "name": "Set 4 Cojines Decorativos",
+    "category": "Textil",
+    "price": 139,
+    "stock": 32,
+    "img": "1484101403633-562f891dc89a",
+    "desc": "Cuatro cojines combinables en tonos neutros y estampados geométricos, con relleno.",
+    "specs": {
+      "Medidas": "45 x 45 cm (c/u)",
+      "Material": "Fundas de poliéster y algodón, relleno de fibra siliconada",
+      "Color": "Neutros y geométricos",
+      "Peso": "1,6 kg (set)",
+      "Incluye": "4 cojines con relleno",
+      "Cuidados": "Fundas lavables a 30 °C."
+    }
+  },
+  {
+    "sku": "AZ-TEX-003",
+    "name": "Cojines Terciopelo Verde x2",
+    "category": "Textil",
+    "price": 99,
+    "stock": 44,
+    "img": "1493663284031-b7e3aefcae8e",
+    "desc": "Par de cojines de terciopelo verde azulado, suaves al tacto y de color intenso.",
+    "specs": {
+      "Medidas": "45 x 45 cm (c/u)",
+      "Material": "Terciopelo de poliéster con relleno de fibra siliconada",
+      "Color": "Verde azulado",
+      "Peso": "1,1 kg (par)",
+      "Incluye": "2 cojines con relleno",
+      "Cuidados": "Lavar la funda a mano en agua fría."
+    }
+  },
+  {
+    "sku": "AZ-TEX-004",
+    "name": "Edredón Gris Perla Queen",
+    "category": "Textil",
+    "price": 329,
+    "stock": 17,
+    "img": "1595526114035-0d45ed16cfbf",
+    "desc": "Edredón de microfibra hipoalergénica en gris perla, cálido y ligero.",
+    "specs": {
+      "Medidas": "240 x 260 cm (queen)",
+      "Material": "Microfibra hipoalergénica de 250 g/m²",
+      "Color": "Gris perla",
+      "Peso": "2,4 kg",
+      "Incluye": "Edredón (no incluye fundas)",
+      "Cuidados": "Lavar a máquina en ciclo delicado a 30 °C."
+    }
+  },
+  {
+    "sku": "AZ-TEX-005",
+    "name": "Alfombra Beige 160x230",
+    "category": "Textil",
+    "price": 379,
+    "stock": 11,
+    "img": "1616486338812-3dadae4b4ace",
+    "desc": "Alfombra de pelo corto en tono beige, fácil de limpiar y antideslizante.",
+    "specs": {
+      "Medidas": "160 x 230 cm · pelo de 1,2 cm",
+      "Material": "Polipropileno con base antideslizante",
+      "Color": "Beige",
+      "Peso": "6,8 kg",
+      "Incluye": "Alfombra",
+      "Cuidados": "Aspirar semanalmente. Manchas con paño húmedo."
+    }
+  }
 ]

@@ -9,7 +9,9 @@ const products = catalog.map((p) => ({
   price: p.price,
   stock: p.stock,
   desc: p.desc,
-  img: `https://images.unsplash.com/photo-${p.img}?auto=format&fit=crop&w=640&h=640&q=70`
+  specs: p.specs,
+  img: `https://images.unsplash.com/photo-${p.img}?auto=format&fit=crop&w=640&h=640&q=70`,
+  imgLarge: `https://images.unsplash.com/photo-${p.img}?auto=format&fit=crop&w=1400&h=1400&q=80`
 }));
 
 const out = `// Archivo generado por scripts/build-catalog.mjs — no editar a mano.\nexport const PRODUCTS = ${JSON.stringify(products, null, 2)};\n`;

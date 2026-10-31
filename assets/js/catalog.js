@@ -7,7 +7,16 @@ export const PRODUCTS = [
     "price": 189,
     "stock": 24,
     "desc": "Repisa vertical de 8 nichos en melamina acabado roble. Ideal para libros, plantas y objetos decorativos.",
-    "img": "https://images.unsplash.com/photo-1595428774223-ef52624120d2?auto=format&fit=crop&w=640&h=640&q=70"
+    "specs": {
+      "Medidas": "180 x 60 x 30 cm",
+      "Material": "Melamina de 18 mm acabado roble",
+      "Color": "Roble natural",
+      "Peso": "24 kg",
+      "Incluye": "Herrajes, tarugos y manual de armado",
+      "Cuidados": "Limpiar con paño seco o ligeramente húmedo. Evitar sol directo prolongado."
+    },
+    "img": "https://images.unsplash.com/photo-1595428774223-ef52624120d2?auto=format&fit=crop&w=640&h=640&q=70",
+    "imgLarge": "https://images.unsplash.com/photo-1595428774223-ef52624120d2?auto=format&fit=crop&w=1400&h=1400&q=80"
   },
   {
     "sku": "AZ-ORG-002",
@@ -16,7 +25,16 @@ export const PRODUCTS = [
     "price": 129,
     "stock": 40,
     "desc": "Trío de repisas flotantes con anclaje oculto. Soportan hasta 10 kg cada una.",
-    "img": "https://images.unsplash.com/photo-1594026112284-02bb6f3352fe?auto=format&fit=crop&w=640&h=640&q=70"
+    "specs": {
+      "Medidas": "60 x 20 x 3,8 cm (c/u)",
+      "Material": "MDF laqueado con soporte metálico oculto",
+      "Color": "Blanco y roble",
+      "Peso": "4,5 kg (set)",
+      "Incluye": "3 repisas, soportes y tornillería",
+      "Cuidados": "Paño seco. No sobrepasar 10 kg por repisa."
+    },
+    "img": "https://images.unsplash.com/photo-1594026112284-02bb6f3352fe?auto=format&fit=crop&w=640&h=640&q=70",
+    "imgLarge": "https://images.unsplash.com/photo-1594026112284-02bb6f3352fe?auto=format&fit=crop&w=1400&h=1400&q=80"
   },
   {
     "sku": "AZ-ORG-003",
@@ -25,7 +43,16 @@ export const PRODUCTS = [
     "price": 459,
     "stock": 12,
     "desc": "Cajonera blanca de líneas limpias con correderas suaves. Orden total para ropa y accesorios.",
-    "img": "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=640&h=640&q=70"
+    "specs": {
+      "Medidas": "80 x 45 x 95 cm",
+      "Material": "MDF laqueado, correderas metálicas telescópicas",
+      "Color": "Blanco mate",
+      "Peso": "38 kg",
+      "Incluye": "Jaladores, herrajes y manual de armado",
+      "Cuidados": "Paño húmedo con jabón neutro. Secar de inmediato."
+    },
+    "img": "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=640&h=640&q=70",
+    "imgLarge": "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1400&h=1400&q=80"
   },
   {
     "sku": "AZ-ORG-004",
@@ -34,7 +61,16 @@ export const PRODUCTS = [
     "price": 119,
     "stock": 30,
     "desc": "Taburete de madera maciza que funciona como escalón, mesa auxiliar o apoyo en cocina.",
-    "img": "https://images.unsplash.com/photo-1503602642458-232111445657?auto=format&fit=crop&w=640&h=640&q=70"
+    "specs": {
+      "Medidas": "35 x 35 x 65 cm",
+      "Material": "Madera maciza de pino barnizada",
+      "Color": "Madera natural",
+      "Peso": "3,2 kg",
+      "Incluye": "Taburete armado",
+      "Cuidados": "Paño seco. Aplicar cera para madera cada 6 meses."
+    },
+    "img": "https://images.unsplash.com/photo-1503602642458-232111445657?auto=format&fit=crop&w=640&h=640&q=70",
+    "imgLarge": "https://images.unsplash.com/photo-1503602642458-232111445657?auto=format&fit=crop&w=1400&h=1400&q=80"
   },
   {
     "sku": "AZ-ORG-005",
@@ -43,7 +79,16 @@ export const PRODUCTS = [
     "price": 899,
     "stock": 6,
     "desc": "Ropero de dos puertas en tono nogal con barra para colgar y repisa superior.",
-    "img": "https://images.unsplash.com/photo-1558997519-83ea9252edf8?auto=format&fit=crop&w=640&h=640&q=70"
+    "specs": {
+      "Medidas": "90 x 52 x 180 cm",
+      "Material": "Melamina de 18 mm tono nogal, bisagras cierre suave",
+      "Color": "Nogal",
+      "Peso": "62 kg",
+      "Incluye": "Barra colgadora, repisa, herrajes y manual",
+      "Cuidados": "Paño seco. Ajustar bisagras una vez al año."
+    },
+    "img": "https://images.unsplash.com/photo-1558997519-83ea9252edf8?auto=format&fit=crop&w=640&h=640&q=70",
+    "imgLarge": "https://images.unsplash.com/photo-1558997519-83ea9252edf8?auto=format&fit=crop&w=1400&h=1400&q=80"
   },
   {
     "sku": "AZ-COC-001",
@@ -52,7 +97,16 @@ export const PRODUCTS = [
     "price": 249,
     "stock": 18,
     "desc": "Olla de hierro fundido esmaltado, apta para todo tipo de cocina. Retiene el calor y el sabor.",
-    "img": "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?auto=format&fit=crop&w=640&h=640&q=70"
+    "specs": {
+      "Medidas": "Ø 26 cm · alto 13 cm · 5 L",
+      "Material": "Hierro fundido con esmalte vitrificado",
+      "Color": "Rojo cereza",
+      "Peso": "4,8 kg",
+      "Incluye": "Olla con tapa",
+      "Cuidados": "Lavar a mano con agua tibia. Apta para inducción, gas, eléctrica y horno hasta 250 °C."
+    },
+    "img": "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?auto=format&fit=crop&w=640&h=640&q=70",
+    "imgLarge": "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?auto=format&fit=crop&w=1400&h=1400&q=80"
   },
   {
     "sku": "AZ-COC-002",
@@ -61,7 +115,16 @@ export const PRODUCTS = [
     "price": 89,
     "stock": 50,
     "desc": "Vasos de cerámica artesanal con esmalte arena y base natural. Aptos para lavavajillas.",
-    "img": "https://images.unsplash.com/photo-1610701596007-11502861dcfa?auto=format&fit=crop&w=640&h=640&q=70"
+    "specs": {
+      "Medidas": "Ø 8 cm · alto 10 cm · 350 ml (c/u)",
+      "Material": "Cerámica gres esmaltada",
+      "Color": "Arena con base natural",
+      "Peso": "1,6 kg (set)",
+      "Incluye": "5 vasos",
+      "Cuidados": "Apto para lavavajillas y microondas."
+    },
+    "img": "https://images.unsplash.com/photo-1610701596007-11502861dcfa?auto=format&fit=crop&w=640&h=640&q=70",
+    "imgLarge": "https://images.unsplash.com/photo-1610701596007-11502861dcfa?auto=format&fit=crop&w=1400&h=1400&q=80"
   },
   {
     "sku": "AZ-COC-003",
@@ -70,7 +133,16 @@ export const PRODUCTS = [
     "price": 29,
     "stock": 120,
     "desc": "Taza de porcelana blanca de paredes gruesas para tu café de cada mañana.",
-    "img": "https://images.unsplash.com/photo-1514228742587-6b1558fcca3d?auto=format&fit=crop&w=640&h=640&q=70"
+    "specs": {
+      "Medidas": "Ø 9 cm · alto 9,5 cm · 350 ml",
+      "Material": "Porcelana blanca de alta temperatura",
+      "Color": "Blanco",
+      "Peso": "380 g",
+      "Incluye": "1 taza",
+      "Cuidados": "Apta para lavavajillas y microondas."
+    },
+    "img": "https://images.unsplash.com/photo-1514228742587-6b1558fcca3d?auto=format&fit=crop&w=640&h=640&q=70",
+    "imgLarge": "https://images.unsplash.com/photo-1514228742587-6b1558fcca3d?auto=format&fit=crop&w=1400&h=1400&q=80"
   },
   {
     "sku": "AZ-COC-004",
@@ -79,7 +151,16 @@ export const PRODUCTS = [
     "price": 389,
     "stock": 15,
     "desc": "Grifo de cocina cuello de cisne en acabado dorado cepillado, cartucho cerámico de larga duración.",
-    "img": "https://images.unsplash.com/photo-1565538810643-b5bdb714032a?auto=format&fit=crop&w=640&h=640&q=70"
+    "specs": {
+      "Medidas": "Alto 42 cm · alcance 22 cm",
+      "Material": "Latón con acabado PVD dorado cepillado, cartucho cerámico 35 mm",
+      "Color": "Dorado cepillado",
+      "Peso": "2,1 kg",
+      "Incluye": "Grifería, mangueras flexibles y kit de fijación",
+      "Cuidados": "Limpiar con paño suave y agua. Evitar productos abrasivos o con cloro."
+    },
+    "img": "https://images.unsplash.com/photo-1565538810643-b5bdb714032a?auto=format&fit=crop&w=640&h=640&q=70",
+    "imgLarge": "https://images.unsplash.com/photo-1565538810643-b5bdb714032a?auto=format&fit=crop&w=1400&h=1400&q=80"
   },
   {
     "sku": "AZ-COC-005",
@@ -88,7 +169,16 @@ export const PRODUCTS = [
     "price": 429,
     "stock": 20,
     "desc": "Batería de acero inoxidable con fondo difusor triple. Incluye tapas de vidrio templado.",
-    "img": "https://images.unsplash.com/photo-1556911220-bff31c812dba?auto=format&fit=crop&w=640&h=640&q=70"
+    "specs": {
+      "Medidas": "Ollas de 16, 20 y 24 cm · sartén 24 cm",
+      "Material": "Acero inoxidable 18/10 con fondo triple difusor",
+      "Color": "Acero pulido",
+      "Peso": "5,4 kg (set)",
+      "Incluye": "3 ollas, 1 sartén y 2 tapas de vidrio templado",
+      "Cuidados": "Apto para lavavajillas e inducción."
+    },
+    "img": "https://images.unsplash.com/photo-1556911220-bff31c812dba?auto=format&fit=crop&w=640&h=640&q=70",
+    "imgLarge": "https://images.unsplash.com/photo-1556911220-bff31c812dba?auto=format&fit=crop&w=1400&h=1400&q=80"
   },
   {
     "sku": "AZ-DOR-001",
@@ -97,7 +187,16 @@ export const PRODUCTS = [
     "price": 279,
     "stock": 22,
     "desc": "Mesa de noche con cajón y patas de madera. Diseño nórdico que combina con todo.",
-    "img": "https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?auto=format&fit=crop&w=640&h=640&q=70"
+    "specs": {
+      "Medidas": "45 x 35 x 55 cm",
+      "Material": "MDF laqueado con patas de madera de pino",
+      "Color": "Blanco y madera",
+      "Peso": "8 kg",
+      "Incluye": "Velador y patas desmontables",
+      "Cuidados": "Paño seco o ligeramente húmedo."
+    },
+    "img": "https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?auto=format&fit=crop&w=640&h=640&q=70",
+    "imgLarge": "https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?auto=format&fit=crop&w=1400&h=1400&q=80"
   },
   {
     "sku": "AZ-DOR-002",
@@ -106,7 +205,16 @@ export const PRODUCTS = [
     "price": 549,
     "stock": 9,
     "desc": "Banca tapizada en lino con capitoné, perfecta a los pies de la cama o en el vestidor.",
-    "img": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=640&h=640&q=70"
+    "specs": {
+      "Medidas": "120 x 40 x 46 cm",
+      "Material": "Estructura de madera, espuma de alta densidad y tapiz de lino",
+      "Color": "Gris perla",
+      "Peso": "14 kg",
+      "Incluye": "Banca armada",
+      "Cuidados": "Aspirar con boquilla de tapicería. Limpiar manchas con paño húmedo."
+    },
+    "img": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=640&h=640&q=70",
+    "imgLarge": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1400&h=1400&q=80"
   },
   {
     "sku": "AZ-DOR-003",
@@ -115,7 +223,16 @@ export const PRODUCTS = [
     "price": 639,
     "stock": 8,
     "desc": "Cabecera acolchada en tela gris grafito para camas de 2 plazas y queen.",
-    "img": "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?auto=format&fit=crop&w=640&h=640&q=70"
+    "specs": {
+      "Medidas": "160 x 8 x 120 cm (queen)",
+      "Material": "Bastidor de madera, espuma acolchada y tela tipo felpa",
+      "Color": "Gris grafito",
+      "Peso": "16 kg",
+      "Incluye": "Cabecera, patas de anclaje y tornillería",
+      "Cuidados": "Aspirar suavemente. Manchas con paño húmedo y jabón neutro."
+    },
+    "img": "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?auto=format&fit=crop&w=640&h=640&q=70",
+    "imgLarge": "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?auto=format&fit=crop&w=1400&h=1400&q=80"
   },
   {
     "sku": "AZ-DOR-004",
@@ -124,7 +241,16 @@ export const PRODUCTS = [
     "price": 399,
     "stock": 14,
     "desc": "Dos banquetas tapizadas en terracota con estructura metálica negra.",
-    "img": "https://images.unsplash.com/photo-1540518614846-7eded433c457?auto=format&fit=crop&w=640&h=640&q=70"
+    "specs": {
+      "Medidas": "40 x 40 x 45 cm (c/u)",
+      "Material": "Estructura metálica con pintura electrostática y tapiz bouclé",
+      "Color": "Terracota y negro",
+      "Peso": "9 kg (par)",
+      "Incluye": "2 banquetas",
+      "Cuidados": "Aspirar. Limpiar manchas con paño húmedo."
+    },
+    "img": "https://images.unsplash.com/photo-1540518614846-7eded433c457?auto=format&fit=crop&w=640&h=640&q=70",
+    "imgLarge": "https://images.unsplash.com/photo-1540518614846-7eded433c457?auto=format&fit=crop&w=1400&h=1400&q=80"
   },
   {
     "sku": "AZ-DOR-005",
@@ -133,7 +259,16 @@ export const PRODUCTS = [
     "price": 699,
     "stock": 7,
     "desc": "Butaca de líneas curvas en tono mostaza, ideal para tu rincón de lectura.",
-    "img": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=640&h=640&q=70"
+    "specs": {
+      "Medidas": "78 x 80 x 82 cm · asiento a 44 cm",
+      "Material": "Madera de eucalipto, espuma de alta densidad y tela antimanchas",
+      "Color": "Mostaza",
+      "Peso": "21 kg",
+      "Incluye": "Butaca y patas desmontables",
+      "Cuidados": "Aspirar. La tela antimanchas se limpia con paño húmedo."
+    },
+    "img": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=640&h=640&q=70",
+    "imgLarge": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=1400&h=1400&q=80"
   },
   {
     "sku": "AZ-BAN-001",
@@ -142,7 +277,16 @@ export const PRODUCTS = [
     "price": 79,
     "stock": 60,
     "desc": "Toallero de acero inoxidable con acabado negro mate, 60 cm. Incluye kit de instalación.",
-    "img": "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=640&h=640&q=70"
+    "specs": {
+      "Medidas": "60 x 6 x 6 cm",
+      "Material": "Acero inoxidable 304 con acabado negro mate",
+      "Color": "Negro mate",
+      "Peso": "650 g",
+      "Incluye": "Toallero, tacos y tornillos",
+      "Cuidados": "Paño suave con agua. No usar productos con cloro."
+    },
+    "img": "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=640&h=640&q=70",
+    "imgLarge": "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=1400&h=1400&q=80"
   },
   {
     "sku": "AZ-BAN-002",
@@ -151,7 +295,16 @@ export const PRODUCTS = [
     "price": 349,
     "stock": 10,
     "desc": "Lavatorio de porcelana vitrificada con pedestal. Estilo atemporal para baños luminosos.",
-    "img": "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?auto=format&fit=crop&w=640&h=640&q=70"
+    "specs": {
+      "Medidas": "55 x 45 x 85 cm",
+      "Material": "Porcelana vitrificada",
+      "Color": "Blanco",
+      "Peso": "19 kg",
+      "Incluye": "Lavatorio, pedestal y kit de fijación (no incluye grifería)",
+      "Cuidados": "Limpiar con productos no abrasivos."
+    },
+    "img": "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?auto=format&fit=crop&w=640&h=640&q=70",
+    "imgLarge": "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?auto=format&fit=crop&w=1400&h=1400&q=80"
   },
   {
     "sku": "AZ-BAN-003",
@@ -160,7 +313,16 @@ export const PRODUCTS = [
     "price": 119,
     "stock": 35,
     "desc": "Bandeja extensible de bambú para tina, con soporte para libro, copa y celular.",
-    "img": "https://images.unsplash.com/photo-1620626011761-996317b8d101?auto=format&fit=crop&w=640&h=640&q=70"
+    "specs": {
+      "Medidas": "70 a 105 x 22 x 4,5 cm (extensible)",
+      "Material": "Bambú laqueado resistente a la humedad",
+      "Color": "Bambú natural",
+      "Peso": "1,9 kg",
+      "Incluye": "Bandeja con soporte para libro, copa y celular",
+      "Cuidados": "Secar después de cada uso. No dejar sumergida."
+    },
+    "img": "https://images.unsplash.com/photo-1620626011761-996317b8d101?auto=format&fit=crop&w=640&h=640&q=70",
+    "imgLarge": "https://images.unsplash.com/photo-1620626011761-996317b8d101?auto=format&fit=crop&w=1400&h=1400&q=80"
   },
   {
     "sku": "AZ-BAN-004",
@@ -169,7 +331,16 @@ export const PRODUCTS = [
     "price": 1290,
     "stock": 5,
     "desc": "Mueble de baño suspendido con lavabo integrado y cajones de cierre lento.",
-    "img": "https://images.unsplash.com/photo-1629079447777-1e605162dc8d?auto=format&fit=crop&w=640&h=640&q=70"
+    "specs": {
+      "Medidas": "80 x 46 x 50 cm",
+      "Material": "MDF hidrófugo laqueado con lavabo de cerámica integrado",
+      "Color": "Blanco y roble",
+      "Peso": "36 kg",
+      "Incluye": "Mueble, lavabo, desagüe y kit de anclaje a muro",
+      "Cuidados": "Paño húmedo. Secar salpicaduras de inmediato."
+    },
+    "img": "https://images.unsplash.com/photo-1629079447777-1e605162dc8d?auto=format&fit=crop&w=640&h=640&q=70",
+    "imgLarge": "https://images.unsplash.com/photo-1629079447777-1e605162dc8d?auto=format&fit=crop&w=1400&h=1400&q=80"
   },
   {
     "sku": "AZ-BAN-005",
@@ -178,7 +349,16 @@ export const PRODUCTS = [
     "price": 359,
     "stock": 16,
     "desc": "Espejo redondo con iluminación LED perimetral y sistema antiempañante.",
-    "img": "https://images.unsplash.com/photo-1604709177225-055f99402ea3?auto=format&fit=crop&w=640&h=640&q=70"
+    "specs": {
+      "Medidas": "Ø 60 cm · espesor 3,5 cm",
+      "Material": "Vidrio plateado de 5 mm con marco de aluminio, LED 6000 K",
+      "Color": "Plateado con luz blanca",
+      "Peso": "6,5 kg",
+      "Incluye": "Espejo, soporte de pared y sistema antiempañante",
+      "Cuidados": "Limpiar con paño de microfibra y limpiavidrios. Conexión 220 V."
+    },
+    "img": "https://images.unsplash.com/photo-1604709177225-055f99402ea3?auto=format&fit=crop&w=640&h=640&q=70",
+    "imgLarge": "https://images.unsplash.com/photo-1604709177225-055f99402ea3?auto=format&fit=crop&w=1400&h=1400&q=80"
   },
   {
     "sku": "AZ-DEC-001",
@@ -187,7 +367,16 @@ export const PRODUCTS = [
     "price": 159,
     "stock": 25,
     "desc": "Tapiz de macramé tejido a mano en algodón crudo. Aporta calidez y textura a cualquier pared.",
-    "img": "https://images.unsplash.com/photo-1556228453-efd6c1ff04f6?auto=format&fit=crop&w=640&h=640&q=70"
+    "specs": {
+      "Medidas": "60 x 90 cm",
+      "Material": "Algodón crudo trenzado a mano con barra de madera",
+      "Color": "Crudo natural",
+      "Peso": "750 g",
+      "Incluye": "Tapiz con barra y cordón para colgar",
+      "Cuidados": "Sacudir suavemente. No lavar a máquina."
+    },
+    "img": "https://images.unsplash.com/photo-1556228453-efd6c1ff04f6?auto=format&fit=crop&w=640&h=640&q=70",
+    "imgLarge": "https://images.unsplash.com/photo-1556228453-efd6c1ff04f6?auto=format&fit=crop&w=1400&h=1400&q=80"
   },
   {
     "sku": "AZ-DEC-002",
@@ -196,7 +385,16 @@ export const PRODUCTS = [
     "price": 49,
     "stock": 90,
     "desc": "Vela de cera de soya en vaso de vidrio ahumado. Hasta 45 horas de aroma.",
-    "img": "https://images.unsplash.com/photo-1602874801007-bd458bb1b8b6?auto=format&fit=crop&w=640&h=640&q=70"
+    "specs": {
+      "Medidas": "Ø 8 cm · alto 9 cm · 220 g",
+      "Material": "Cera de soya natural, mecha de algodón y vaso de vidrio ahumado",
+      "Color": "Ámbar ahumado",
+      "Peso": "420 g",
+      "Incluye": "Vela con tapa",
+      "Cuidados": "Recortar la mecha a 5 mm antes de cada uso. No dejar encendida sin supervisión."
+    },
+    "img": "https://images.unsplash.com/photo-1602874801007-bd458bb1b8b6?auto=format&fit=crop&w=640&h=640&q=70",
+    "imgLarge": "https://images.unsplash.com/photo-1602874801007-bd458bb1b8b6?auto=format&fit=crop&w=1400&h=1400&q=80"
   },
   {
     "sku": "AZ-DEC-003",
@@ -205,7 +403,16 @@ export const PRODUCTS = [
     "price": 69,
     "stock": 45,
     "desc": "Ramo de hierba de pampa preservada. Decoración natural que no necesita agua.",
-    "img": "https://images.unsplash.com/photo-1578500494198-246f612d3b3d?auto=format&fit=crop&w=640&h=640&q=70"
+    "specs": {
+      "Medidas": "Alto 80 a 100 cm · 6 tallos",
+      "Material": "Hierba de pampa natural preservada",
+      "Color": "Beige natural",
+      "Peso": "120 g",
+      "Incluye": "Ramo de 6 tallos (no incluye florero)",
+      "Cuidados": "Mantener lejos de la humedad. Rociar laca para fijar."
+    },
+    "img": "https://images.unsplash.com/photo-1578500494198-246f612d3b3d?auto=format&fit=crop&w=640&h=640&q=70",
+    "imgLarge": "https://images.unsplash.com/photo-1578500494198-246f612d3b3d?auto=format&fit=crop&w=1400&h=1400&q=80"
   },
   {
     "sku": "AZ-DEC-004",
@@ -214,7 +421,16 @@ export const PRODUCTS = [
     "price": 199,
     "stock": 19,
     "desc": "Nueve marcos negros con paspartú para armar tu pared de recuerdos.",
-    "img": "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=640&h=640&q=70"
+    "specs": {
+      "Medidas": "4 de 30 x 40, 4 de 20 x 25 y 1 de 50 x 70 cm",
+      "Material": "Marco de MDF, vidrio acrílico y paspartú blanco",
+      "Color": "Negro",
+      "Peso": "4,2 kg (set)",
+      "Incluye": "9 marcos, plantilla de pared y ganchos",
+      "Cuidados": "Paño seco."
+    },
+    "img": "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=640&h=640&q=70",
+    "imgLarge": "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1400&h=1400&q=80"
   },
   {
     "sku": "AZ-DEC-005",
@@ -223,7 +439,16 @@ export const PRODUCTS = [
     "price": 289,
     "stock": 13,
     "desc": "Lámpara de techo con globo de vidrio transparente y detalles dorados.",
-    "img": "https://images.unsplash.com/photo-1507089947368-19c1da9775ae?auto=format&fit=crop&w=640&h=640&q=70"
+    "specs": {
+      "Medidas": "Ø 25 cm · cable regulable hasta 120 cm",
+      "Material": "Vidrio soplado transparente con base metálica dorada",
+      "Color": "Transparente y dorado",
+      "Peso": "1,8 kg",
+      "Incluye": "Lámpara, florón y cable",
+      "Cuidados": "Limpiar con paño seco, siempre con la luz apagada. Rosca E27, foco no incluido."
+    },
+    "img": "https://images.unsplash.com/photo-1507089947368-19c1da9775ae?auto=format&fit=crop&w=640&h=640&q=70",
+    "imgLarge": "https://images.unsplash.com/photo-1507089947368-19c1da9775ae?auto=format&fit=crop&w=1400&h=1400&q=80"
   },
   {
     "sku": "AZ-TEX-001",
@@ -232,7 +457,16 @@ export const PRODUCTS = [
     "price": 45,
     "stock": 80,
     "desc": "Funda 45x45 cm en algodón con rayas terracota y cierre invisible.",
-    "img": "https://images.unsplash.com/photo-1616627561950-9f746e330187?auto=format&fit=crop&w=640&h=640&q=70"
+    "specs": {
+      "Medidas": "45 x 45 cm",
+      "Material": "100 % algodón tejido",
+      "Color": "Terracota y crudo",
+      "Peso": "180 g",
+      "Incluye": "Funda con cierre invisible (sin relleno)",
+      "Cuidados": "Lavar a máquina a 30 °C. No usar secadora."
+    },
+    "img": "https://images.unsplash.com/photo-1616627561950-9f746e330187?auto=format&fit=crop&w=640&h=640&q=70",
+    "imgLarge": "https://images.unsplash.com/photo-1616627561950-9f746e330187?auto=format&fit=crop&w=1400&h=1400&q=80"
   },
   {
     "sku": "AZ-TEX-002",
@@ -241,7 +475,16 @@ export const PRODUCTS = [
     "price": 139,
     "stock": 32,
     "desc": "Cuatro cojines combinables en tonos neutros y estampados geométricos, con relleno.",
-    "img": "https://images.unsplash.com/photo-1484101403633-562f891dc89a?auto=format&fit=crop&w=640&h=640&q=70"
+    "specs": {
+      "Medidas": "45 x 45 cm (c/u)",
+      "Material": "Fundas de poliéster y algodón, relleno de fibra siliconada",
+      "Color": "Neutros y geométricos",
+      "Peso": "1,6 kg (set)",
+      "Incluye": "4 cojines con relleno",
+      "Cuidados": "Fundas lavables a 30 °C."
+    },
+    "img": "https://images.unsplash.com/photo-1484101403633-562f891dc89a?auto=format&fit=crop&w=640&h=640&q=70",
+    "imgLarge": "https://images.unsplash.com/photo-1484101403633-562f891dc89a?auto=format&fit=crop&w=1400&h=1400&q=80"
   },
   {
     "sku": "AZ-TEX-003",
@@ -250,7 +493,16 @@ export const PRODUCTS = [
     "price": 99,
     "stock": 44,
     "desc": "Par de cojines de terciopelo verde azulado, suaves al tacto y de color intenso.",
-    "img": "https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?auto=format&fit=crop&w=640&h=640&q=70"
+    "specs": {
+      "Medidas": "45 x 45 cm (c/u)",
+      "Material": "Terciopelo de poliéster con relleno de fibra siliconada",
+      "Color": "Verde azulado",
+      "Peso": "1,1 kg (par)",
+      "Incluye": "2 cojines con relleno",
+      "Cuidados": "Lavar la funda a mano en agua fría."
+    },
+    "img": "https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?auto=format&fit=crop&w=640&h=640&q=70",
+    "imgLarge": "https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?auto=format&fit=crop&w=1400&h=1400&q=80"
   },
   {
     "sku": "AZ-TEX-004",
@@ -259,7 +511,16 @@ export const PRODUCTS = [
     "price": 329,
     "stock": 17,
     "desc": "Edredón de microfibra hipoalergénica en gris perla, cálido y ligero.",
-    "img": "https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?auto=format&fit=crop&w=640&h=640&q=70"
+    "specs": {
+      "Medidas": "240 x 260 cm (queen)",
+      "Material": "Microfibra hipoalergénica de 250 g/m²",
+      "Color": "Gris perla",
+      "Peso": "2,4 kg",
+      "Incluye": "Edredón (no incluye fundas)",
+      "Cuidados": "Lavar a máquina en ciclo delicado a 30 °C."
+    },
+    "img": "https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?auto=format&fit=crop&w=640&h=640&q=70",
+    "imgLarge": "https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?auto=format&fit=crop&w=1400&h=1400&q=80"
   },
   {
     "sku": "AZ-TEX-005",
@@ -268,6 +529,15 @@ export const PRODUCTS = [
     "price": 379,
     "stock": 11,
     "desc": "Alfombra de pelo corto en tono beige, fácil de limpiar y antideslizante.",
-    "img": "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=640&h=640&q=70"
+    "specs": {
+      "Medidas": "160 x 230 cm · pelo de 1,2 cm",
+      "Material": "Polipropileno con base antideslizante",
+      "Color": "Beige",
+      "Peso": "6,8 kg",
+      "Incluye": "Alfombra",
+      "Cuidados": "Aspirar semanalmente. Manchas con paño húmedo."
+    },
+    "img": "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=640&h=640&q=70",
+    "imgLarge": "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=1400&h=1400&q=80"
   }
 ];

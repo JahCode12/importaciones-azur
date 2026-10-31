@@ -229,6 +229,38 @@
     </div>
   </aside>
 
+  <!-- Detalle de producto -->
+  <dialog class="modal modal--product" id="productModal" aria-labelledby="pdName">
+    <button type="button" class="icon-btn pd__close" data-close-product aria-label="Cerrar detalle">✕</button>
+    <div class="pd">
+      <div class="pd__media">
+        <div class="zoom" id="pdZoom" tabindex="0" role="button" aria-label="Acercar imagen">
+          <img id="pdImg" src="" alt="" width="1400" height="1400">
+        </div>
+        <p class="pd__hint" id="pdHint">Pasa el cursor sobre la foto para hacer zoom</p>
+      </div>
+      <div class="pd__info">
+        <p class="pd__meta"><span class="card__tag" id="pdCat"></span> <span class="card__sku" id="pdSku"></span></p>
+        <h2 id="pdName"></h2>
+        <p class="pd__price" id="pdPrice"></p>
+        <p class="pd__stock" id="pdStock"></p>
+        <p class="pd__desc" id="pdDesc"></p>
+        <h3 class="pd__subtitle">Especificaciones</h3>
+        <dl class="specs" id="pdSpecs"></dl>
+        <div class="pd__buy">
+          <div class="qty qty--lg">
+            <button type="button" id="pdMinus" aria-label="Quitar uno">−</button>
+            <input type="number" id="pdQty" min="1" value="1" aria-label="Cantidad">
+            <button type="button" id="pdPlus" aria-label="Agregar uno">+</button>
+          </div>
+          <button type="button" class="btn btn--primary" id="pdAdd">Agregar al carrito</button>
+        </div>
+        <a class="btn btn--ghost btn--block" id="pdWa" href="#" target="_blank" rel="noopener">Consultar este producto por WhatsApp</a>
+        <p class="pd__ally">¿Necesitas 50 unidades o más? <a href="#aliados" data-close-product>Accede a precio de aliado</a></p>
+      </div>
+    </div>
+  </dialog>
+
   <!-- Checkout -->
   <dialog class="modal" id="checkoutModal" aria-labelledby="checkoutTitle">
     <form id="checkoutForm" method="dialog" novalidate>
