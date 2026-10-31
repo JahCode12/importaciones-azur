@@ -462,6 +462,18 @@ function initAlly() {
 /* ---------------- Chat Azur ---------------- */
 const chat = { history: [], busy: false, lastSent: 0, opened: false };
 
+function chatSessionId() {
+  if (chat.sessionId) return chat.sessionId;
+  let id = null;
+  try { id = sessionStorage.getItem('azur_chat_session'); } catch { /* sin almacenamiento */ }
+  if (!id) {
+    id = (crypto.randomUUID ? crypto.randomUUID() : `s-${Date.now()}-${Math.random().toString(36).slice(2)}`);
+    try { sessionStorage.setItem('azur_chat_session', id); } catch { /* sin almacenamiento */ }
+  }
+  chat.sessionId = id;
+  return id;
+}
+
 function addMsg(text, who = 'bot', extra = '') {
   const node = el('div', { class: `msg msg--${who} ${extra}`.trim() });
   // El modelo usa **negritas** de Markdown: se pintan como <strong> sin tocar innerHTML.
@@ -516,17 +528,11 @@ async function sendChat(text) {
   const typing = addMsg('', 'bot');
   typing.append(el('span', { class: 'typing', 'aria-label': 'Azur está escribiendo' }, el('i'), el('i'), el('i')));
   try {
-    const { data } = await postJSON(CONFIG.endpoints.chat, {
-      message,
-      history: chat.history.slice(-8),
-      cart: cartLines().map(({ product, qty }) => ({ sku: product.sku, qty }))
-    });
+    // El agente de captura guarda la conversación en su memoria por sessionId.
+    const { data } = await postJSON(CONFIG.endpoints.chatLeads, { action: 'sendMessage', sessionId: chatSessionId(), chatInput: message }, 90000);
     typing.remove();
-    const reply = typeof data.reply === 'string' && data.reply ? data.reply : 'Uy, no te entendí. ¿Me lo dices de otra forma?';
-    addMsg(reply, 'bot', data.blocked ? 'msg--warn' : '');
-    chat.history.push({ role: 'user', text: message });
-    if (!data.blocked) chat.history.push({ role: 'assistant', text: reply.slice(0, 400) });
-    runActions(Array.isArray(data.actions) ? data.actions : []);
+    const reply = typeof data.output === 'string' && data.output ? data.output : 'Uy, no te entendí. ¿Me lo dices de otra forma?';
+    addMsg(reply, 'bot');
   } catch {
     typing.remove();
     addMsg('Tengo problemas de conexión 😕. Puedes escribirnos por WhatsApp al +51 982 770 361.', 'bot', 'msg--warn');
@@ -540,7 +546,7 @@ function openChat() {
   $('#chatFab').hidden = true;
   if (!chat.opened) {
     chat.opened = true;
-    addMsg('¡Hola! Soy Azur 🌿, tu asistente de Importaciones Azur. Puedo recomendarte productos, agregarlos a tu carrito o ayudarte a ser nuestro aliado mayorista. ¿Qué buscas hoy?');
+    addMsg('¡Hola! Soy Azur 🌿, el asistente de Importaciones Azur. Te cuento sobre nuestro Programa Aliados (20% de descuento desde 50 unidades por SKU) y te envío la propuesta a tu correo. ¿Empezamos con tu nombre?');
   }
   $('#chatInput').focus();
 }
@@ -551,10 +557,9 @@ function initChat() {
   $('#chatClose').addEventListener('click', closeChat);
   $('#chatForm').addEventListener('submit', (e) => { e.preventDefault(); const v = $('#chatInput').value; $('#chatInput').value = ''; sendChat(v); });
   const chips = [
-    ['🍳 Ideas para mi cocina', 'Recomiéndame productos para mi cocina'],
-    ['🛏️ Dormitorio acogedor', 'Quiero hacer mi dormitorio más acogedor, ¿qué me recomiendas?'],
-    ['🤝 Quiero ser aliado', 'Quiero comprar al por mayor y ser aliado'],
-    ['✅ Finalizar compra', 'Quiero finalizar mi compra']
+    ['🤝 Quiero la propuesta', 'Hola, quiero recibir la propuesta del Programa Aliados'],
+    ['🚢 Asesoría para importar', 'Me interesa la asesoría para importaciones'],
+    ['🎓 Mini curso', 'Me interesa el mini curso de importaciones']
   ];
   $('#chatChips').replaceChildren(...chips.map(([label, msg]) => el('button', { type: 'button', onclick: () => sendChat(msg) }, label)));
 }
