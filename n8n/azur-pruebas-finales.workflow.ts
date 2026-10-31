@@ -66,7 +66,7 @@ const chatLeads = trigger({
       mode: 'hostedChat',
       authentication: 'none',
       initialMessages: '¡Hola! Soy Azur 🌿, el asistente de Importaciones Azur.\nTe cuento sobre nuestro Programa Aliados y te envío la propuesta a tu correo. ¿Empezamos con tu nombre?',
-      options: { title: 'Azur · Importaciones Azur', subtitle: 'Programa Aliados: 20% de descuento desde 50 unidades', inputPlaceholder: 'Escribe tu respuesta…', responseMode: 'lastNode' }
+      options: { allowedOrigins: '*', title: 'Azur · Importaciones Azur', subtitle: 'Programa Aliados: 20% de descuento desde 50 unidades', inputPlaceholder: 'Escribe tu respuesta…', responseMode: 'lastNode' }
     }
   },
   output: [{ sessionId: 'abc123', action: 'sendMessage', chatInput: 'Hola, quiero información' }]
@@ -140,7 +140,7 @@ MISIÓN: conversar con el visitante y obtener, UNO POR UNO y en este orden, sus 
 7) producto o tema de interés: ofrece exactamente estas opciones → "Programa Aliados: compra mayorista desde 50 unidades", "Asesoría para importaciones", "Mini curso de importaciones", "Productos para el hogar (catálogo web)"
 8) comentario o necesidad específica (opcional: si no tiene, sigue)
 9) consentimiento: pregunta textualmente "¿Aceptas recibir comunicaciones comerciales de Importaciones Azur por correo?"
-Haz una sola pregunta por mensaje. Si un dato parece inválido (correo sin @, celular sin 9 dígitos), pídelo de nuevo con amabilidad.
+Haz una sola pregunta por mensaje y avanza al siguiente dato apenas recibas una respuesta válida. Acepta el celular con espacios, guiones o +51 (el sistema lo normaliza); solo vuelve a pedirlo si no tiene 9 dígitos. Si el correo no tiene @ o dominio, pídelo de nuevo con amabilidad. Si el visitante pregunta por productos o precios del catálogo, respóndele brevemente que puede verlos en la web y retoma la captura en el dato pendiente.
 
 REGLAS DE CIERRE:
 - Si el visitante se niega a dar su correo o no acepta el consentimiento, agradece con amabilidad, despídete y cierra la conversación SIN llamar a ninguna herramienta y sin registrar nada.
